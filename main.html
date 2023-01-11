@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="movie.css" />
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section 1" id="open"><h2 id="quote">The Cinema is truth</br> at 24 frames a second</h2><br><h4>― Jean Luc Godard</h4></div>
+    
+      <div class="section 2" id="content">
+        <div id="movie"></div>
+        <div class="emoji">
+          <img class="icon Music" id="music" src="./pImgs/music-note-ym.png" />
+          <img class="icon Action" id="action" src="./pImgs/color_gun.png" />
+
+          <img class="icon Sf" id="sf" src="./pImgs/planet.png" />
+
+          <img class="icon Rom" id="romance" src="./pImgs/heart_red.png" />
+          <img class="icon Horror" id="horror" src="./pImgs/grave.png" />
+        </div>
+      </div>
+      <footer class="section 3 fp-auto-height" id="footer"><div class="sitefoot"><a href="https://www.netflix.com/kr/"><img class ="site Net" src="./pImgs/netflix.png" /></a><a href="https://watcha.com/"><img class ="site Wat" id="plz" src="./pImgs/watcha.png" /></a></div></footer>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $('#fullpage').fullpage({
+          autoScrolling: true,
+          scrollHorizontally: true,
+        });
+      });
+
+      
+    </script>
+
+    <script src="Movie.js"></script>
+  </body>
+</html>
